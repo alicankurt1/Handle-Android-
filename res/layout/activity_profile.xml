@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageViewProfileAvatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="18dp"
+        android:onClick="changeAvatar"
+        app:layout_constraintBottom_toTopOf="@+id/textView99"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProfileChangeAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/editTextProfileEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProfileChangeEmail"
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfileChangePhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileChangeBirthday"
+        app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+    <EditText
+        android:id="@+id/editTextProfileChangeName"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextProfileChangeSurname"
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfileChangeSurname"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileChangeSurname"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfileChangePassword" />
+
+    <TextView
+        android:id="@+id/textViewProfilePassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="3dp"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProfileChangePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileChangeEmail" />
+
+    <TextView
+        android:id="@+id/textViewProfileChangeEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="34dp"
+        android:onClick="changeEmailTextView"
+        android:text="Change E-mail"
+        android:textColor="#0384F4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProfilePassword"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProfileChangeEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileEmail" />
+
+    <TextView
+        android:id="@+id/textViewProfileEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="3dp"
+        android:text="E-mail"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProfileChangeEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfileChangeEmail" />
+
+    <TextView
+        android:id="@+id/textViewProfileBirthday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="4dp"
+        android:text="Doğum Yılı"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextProfileChangeBirthday"
+        app:layout_constraintEnd_toEndOf="@+id/buttonProfileChangeDetails"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileChangeBirthday"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileChangePhoneNumber" />
+
+    <EditText
+        android:id="@+id/editTextProfileChangeBirthday"
+        android:layout_width="293dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:ems="10"
+        android:hint="Doğum Yılı"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProfileChangeDetails"
+        app:layout_constraintEnd_toEndOf="@+id/buttonProfileChangeDetails"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileChangePhoneNumber" />
+
+    <EditText
+        android:id="@+id/editTextProfileChangeSurname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:ems="10"
+        android:hint="Soyisim"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProfileName"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProfileChangeAvatar"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileChangeBirthday"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfileChangePassword" />
+
+    <Button
+        android:id="@+id/buttonProfileChangePassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="changePasswordButton"
+        android:text="Change"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfileChangeSurname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewProfileChangePassword"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfilePassword" />
+
+    <EditText
+        android:id="@+id/editTextProfilePasswordCheck"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewProfileEmail"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProfileChangeEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileEmail" />
+
+    <Button
+        android:id="@+id/buttonProfileChangeDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="changeDetailsButton"
+        android:text="Change"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViewProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewProfileChangeDetails"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileChangeBirthday" />
+
+    <TextView
+        android:id="@+id/textViewProfileSurname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="1dp"
+        android:text="Soyisim"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfileChangePhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileName" />
+
+    <TextView
+        android:id="@+id/textViewProfileChangeDetails"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="31dp"
+        android:onClick="changeYourDetails"
+        android:text="Change Your Details"
+        android:textColor="#0384F4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViewProfile"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProfileChangeDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileChangePhoneNumber" />
+
+    <EditText
+        android:id="@+id/editTextProfileChangePassword"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonProfileChangePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfilePasswordCheck" />
+
+    <TextView
+        android:id="@+id/textViewProfileName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:text="İsim"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProfileSurname"
+        app:layout_constraintEnd_toEndOf="@+id/textViewProfilePhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileChangeName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileChangeSurname" />
+
+    <EditText
+        android:id="@+id/editTextProfileChangePhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:hint="Telefon Numarası"
+        android:inputType="phone"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfileChangeBirthday"
+        app:layout_constraintEnd_toEndOf="@+id/textViewProfilePhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileChangeBirthday"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileSurname" />
+
+    <TextView
+        android:id="@+id/textViewProfileChangePassword"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="90dp"
+        android:onClick="changePassword"
+        android:text="Change Password"
+        android:textColor="#0384F4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextProfileChangeSurname"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProfileChangePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileEmail" />
+
+    <Button
+        android:id="@+id/buttonProfileChangeEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="58dp"
+        android:onClick="changeEmailButton"
+        android:text="Change"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProfileEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewProfileChangeEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileEmail" />
+
+    <TextView
+        android:id="@+id/textViewProfilePhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="Telefon Numarası"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextProfileChangePhoneNumber"
+        app:layout_constraintEnd_toEndOf="@+id/textViewProfileBirthday"
+        app:layout_constraintStart_toStartOf="@+id/textViewProfileBirthday" />
+
+    <TextView
+        android:id="@+id/textViewProfileRating"
+        android:layout_width="152dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:text="Rating"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView99"
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfileChangePassword"
+        app:layout_constraintStart_toStartOf="@+id/textView99" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="111dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="10dp"
+        android:text="Rating :"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfileEmail"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProfileChangeEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileChangePassword"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfileChangeAvatar" />
+
+    <Button
+        android:id="@+id/buttonProfileChangeAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="changeProfileAvatarButton"
+        android:text="Change"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView99"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProfileAvatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF7D7D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewProfileChangeDetails"
+        app:layout_constraintStart_toEndOf="@+id/textViewProfileChangeDetails"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfileChangeDetails"
+        app:menu="@menu/bottom_nav_menu2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
