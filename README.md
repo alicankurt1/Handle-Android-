@@ -1,6 +1,6 @@
 # Handle-Android-
 ## Mobile Service and Assistance Application
-
+-------------
 ### Login Screen
 
 The first screen of the Handle program is this screen as seen on Figure 1. Users can log 
@@ -9,7 +9,7 @@ UP" button and go to the SIGN UP intent.
 
 ![image](https://user-images.githubusercontent.com/20724649/121866781-ef687e80-cd07-11eb-8219-8ab07f421144.png)
 >Figure 1: Login Screen
-
+-------------
 
 ### Sign Up Screen
 
@@ -21,7 +21,7 @@ after the required information is entered, it returns to the Login screen to log
 
 ![image](https://user-images.githubusercontent.com/20724649/121866946-1d4dc300-cd08-11eb-843e-1f51e1ed5215.png)
 >Figure 1.1: Sign Up Screen
-
+-------------
 
 ### Home Screen
 
@@ -37,7 +37,7 @@ post. Home screen is as seen on Figure 1.2.
 
 ![image](https://user-images.githubusercontent.com/20724649/121867158-4bcb9e00-cd08-11eb-9fd1-6b2eb8098fef.png)
 >Figure 1.2: Tasks listed on Home Screen
-
+-------------
 
 ### New Task Screen
 
@@ -61,6 +61,7 @@ charge. To do this, instead of entering a fee in the "Price in TL" section, the 
 below it is ticked, indicating that they expect a free help.
 After the post is created, it is now open to offers.
 
+-------------
 
 ### Job Detail Screen
 
@@ -73,7 +74,7 @@ that job can be accepted. Many users can bid or accept this job.
 
 ![image](https://user-images.githubusercontent.com/20724649/121867381-92b99380-cd08-11eb-91ff-6a939afc8484.png)
 >Figure 1.4: Job Detail Screen
-
+-------------
 
 ### All-Jobs-on-Map Screen
 
@@ -88,7 +89,7 @@ accepted or offered as described above.
 
 ![image](https://user-images.githubusercontent.com/20724649/121867465-a82ebd80-cd08-11eb-910a-13505c25b210.png)
 >Figure 1.5: All-Jobs-on-Map Screen
-
+-------------
 
 ### My Profile Screen
 
@@ -100,7 +101,7 @@ help works we accept. Related images can be seen on Figure 1.6.
 
 ![image](https://user-images.githubusercontent.com/20724649/121867566-c0064180-cd08-11eb-8aa6-935613daabdf.png)
 >Figure 1.6: My Profile Screens
-
+-------------
 
 ### My Posts Screen
 
@@ -119,6 +120,8 @@ necessary to be informed that it was made by the user as seen on Figure 1.7. Aft
 bidder has done the job, he / she says that he / she is doing the job by pressing the "I’ve 
 Done" button and the user who opens the job becomes able to give points.
 
+-------------
+
 ### My Offers Screen
 
 The status of the offers can be learned and the offer prices can be updated from the My 
@@ -131,7 +134,7 @@ offer yet.
 
 ![image](https://user-images.githubusercontent.com/20724649/121867786-fd6acf00-cd08-11eb-9d0a-f32b4ebceada.png)
 >Figure 1.8: My Offers Screen
-
+-------------
 
 ### Flow Diagram
 
